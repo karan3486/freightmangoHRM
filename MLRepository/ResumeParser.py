@@ -21,9 +21,9 @@ class ResumeParser:
         elif (filepath.endswith('.pdf')):
             with open(filepath, 'rb') as f:
                 pdf_reader = PyPDF2.PdfReader(f)
-                num_pages = pdf_reader.getNumPages()
+                num_pages = len(pdf_reader.pages)
                 for pgno in range(num_pages):
-                    pgtext = pdf_reader.getPage(pgno).extractText()
+                    pgtext = pdf_reader.pages[pgno].extract_text()
                     self.resume_text += pgtext
                 self.log_writer.log(self.file_object, 'Resume Converted to text from pdf')
     def DataCleaning(self,dataset):
