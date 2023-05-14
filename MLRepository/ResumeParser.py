@@ -6,6 +6,7 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from utilities.Logger import App_Logger
+import nltk
 
 class ResumeParser:
     def __init__(self, filepath):
@@ -13,6 +14,7 @@ class ResumeParser:
         self.resume_text = ""
         self.file_object = open("LogFolder/Log_"+str(datetime.now().date())+".txt", 'a+')
         self.log_writer = App_Logger()
+        nltk.download('punkt')
 
         if (filepath.endswith('.docx')):
             with open(filepath, 'rb') as f:
