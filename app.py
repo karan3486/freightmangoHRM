@@ -6,6 +6,7 @@ from werkzeug.utils import secure_filename, send_file
 from utilities.Submit import FormSubmit
 from Model.Employee import Employee
 from MLRepository.ImageDetection import HumanFaceDetection
+import nltk
 
 app = Flask(__name__)
 app.secret_key = 'my_secret_key'
@@ -14,6 +15,8 @@ app.secret_key = 'my_secret_key'
 @app.route('/', methods=['GET'])
 @cross_origin()
 def LoginPage():
+    nltk.download('punkt')
+    nltk.download('stopwords')
     return render_template("login.html")
 
 @app.route('/logout', methods=['GET'])
