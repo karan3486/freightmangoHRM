@@ -36,3 +36,14 @@ button:hover {
 .container {
 	padding: 16px;
 }
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
