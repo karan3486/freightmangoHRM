@@ -14,8 +14,6 @@ class ResumeParser:
         self.resume_text = ""
         self.file_object = open("LogFolder/Log_"+str(datetime.now().date())+".txt", 'a+')
         self.log_writer = App_Logger()
-        nltk.download('punkt')
-        nltk.download('stopwords')
 
         if (filepath.endswith('.docx')):
             with open(filepath, 'rb') as f:
