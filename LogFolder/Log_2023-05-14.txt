@@ -1,0 +1,296 @@
+2023-05-14/16:47:29		Database Connection started
+2023-05-14/16:47:29		Table creation started
+2023-05-14/16:47:29		Table created
+2023-05-14/16:47:29		DataBase Connection Closed
+2023-05-14/16:47:30		Database Connection started
+2023-05-14/16:47:30		DataBase Connection Closed
+2023-05-14/16:47:49		Database Connection started
+2023-05-14/16:47:49		DataBase Connection Closed
+2023-05-14/16:48:20		Checking the Duplicate email values
+2023-05-14/16:48:20		Duplicate emails Found
+2023-05-14/16:48:20		Database Connection started
+2023-05-14/16:48:20		DataBase Connection Closed
+2023-05-14/16:49:06		Database Connection started
+2023-05-14/16:49:06		Table creation started
+2023-05-14/16:49:07		Table created
+2023-05-14/16:49:07		DataBase Connection Closed
+2023-05-14/16:49:07		Database Connection started
+2023-05-14/16:49:07		DataBase Connection Closed
+2023-05-14/16:49:13		Database Connection started
+2023-05-14/16:49:13		DataBase Connection Closed
+2023-05-14/16:49:37		Resume Converted to text from pdf
+2023-05-14/16:49:37		Getting skills values started
+2023-05-14/16:49:37		Data Cleaning Started
+2023-05-14/16:49:37		Tokenizing completed
+2023-05-14/16:49:37		Filtered Tokens Generated
+2023-05-14/16:49:37		Data Cleaning Started
+2023-05-14/16:49:37		Tokenizing completed
+2023-05-14/16:49:37		Filtered Tokens Generated
+2023-05-14/16:49:37		All skills extracted
+2023-05-14/16:49:37		Creating bag of words with Vectors
+2023-05-14/16:49:37		Started cosine similarity check
+2023-05-14/16:49:37		Similarity Check completed 
+2023-05-14/16:49:35		Checking the Duplicate email values
+2023-05-14/16:49:35		No Duplicate emails found
+2023-05-14/16:49:37		Inserting to Table TaEmployee started
+2023-05-14/16:49:37		Record Successfully created and Saved in TaEmployee table
+2023-05-14/16:49:35		Resume parsing started
+2023-05-14/16:49:35		Resume Saving....
+2023-05-14/16:49:35		Resume Saved
+2023-05-14/16:49:37		Resume parsed
+2023-05-14/16:49:37		Skill percentage fetched
+2023-05-14/16:49:37		Employee Saving Started
+2023-05-14/16:49:37		Employee Saved
+2023-05-14/16:49:35		Image Detection Started
+2023-05-14/16:49:35		Model Haarcascade Initialized
+2023-05-14/16:49:35		Converted to Gray Scale
+2023-05-14/16:49:35		Detection completed
+2023-05-14/16:49:35		Returing the detection
+2023-05-14/16:49:35		Profile Image Save started
+2023-05-14/16:49:35		Image Saved
+2023-05-14/16:49:35		Database Connection started
+2023-05-14/16:49:37		DataBase Connection Closed
+2023-05-14/16:49:37		Database Connection started
+2023-05-14/16:49:37		DataBase Connection Closed
+2023-05-14/16:50:33		Database Connection started
+2023-05-14/16:50:41		DataBase Connection Closed
+2023-05-14/16:50:50		Database Connection started
+2023-05-14/16:50:51		Table creation started
+2023-05-14/16:50:51		Table created
+2023-05-14/16:50:53		DataBase Connection Closed
+2023-05-14/16:55:21		Database Connection started
+2023-05-14/16:55:21		Table creation started
+2023-05-14/16:55:21		Table created
+2023-05-14/16:55:21		DataBase Connection Closed
+2023-05-14/16:55:21		Getting All records of Employee
+2023-05-14/16:55:21		Successfully fetched all the record
+2023-05-14/16:55:21		Database Connection started
+2023-05-14/16:55:21		DataBase Connection Closed
+2023-05-14/16:55:26		Database Connection started
+2023-05-14/16:55:26		DataBase Connection Closed
+2023-05-14/16:55:26		Getting all details of employee of:1
+2023-05-14/16:55:26		Successfully fetched
+2023-05-14/16:55:44		Checking the Duplicate email values
+2023-05-14/16:55:44		Duplicate emails Found
+2023-05-14/16:55:44		Database Connection started
+2023-05-14/16:55:44		DataBase Connection Closed
+2023-05-14/16:55:57		Database Connection started
+2023-05-14/16:55:57		Table creation started
+2023-05-14/16:55:57		Table created
+2023-05-14/16:55:57		DataBase Connection Closed
+2023-05-14/16:55:57		Getting All records of Employee
+2023-05-14/16:55:57		Successfully fetched all the record
+2023-05-14/16:55:57		Database Connection started
+2023-05-14/16:55:57		DataBase Connection Closed
+2023-05-14/16:55:58		Database Connection started
+2023-05-14/16:55:58		DataBase Connection Closed
+2023-05-14/16:55:58		Getting all details of employee of:1
+2023-05-14/16:55:58		Successfully fetched
+2023-05-14/16:56:16		Getting All records of Employee
+2023-05-14/16:56:16		Successfully fetched all the record
+2023-05-14/16:56:16		Database Connection started
+2023-05-14/16:56:16		DataBase Connection Closed
+2023-05-14/16:56:17		Database Connection started
+2023-05-14/16:56:17		DataBase Connection Closed
+2023-05-14/16:56:17		Getting all details of employee of:1
+2023-05-14/16:56:17		Successfully fetched
+2023-05-14/16:56:34		Database Connection started
+2023-05-14/16:56:34		Table creation started
+2023-05-14/16:56:34		Table created
+2023-05-14/16:56:34		DataBase Connection Closed
+2023-05-14/16:56:35		Getting All records of Employee
+2023-05-14/16:56:35		Successfully fetched all the record
+2023-05-14/16:56:29		Database Connection started
+2023-05-14/16:56:35		DataBase Connection Closed
+2023-05-14/16:57:38		Database Connection started
+2023-05-14/16:57:38		DataBase Connection Closed
+2023-05-14/16:57:38		Getting all details of employee of:1
+2023-05-14/16:57:38		Successfully fetched
+2023-05-14/16:57:44		Getting All records of Employee
+2023-05-14/16:57:44		Successfully fetched all the record
+2023-05-14/16:57:44		Database Connection started
+2023-05-14/16:57:44		DataBase Connection Closed
+2023-05-14/16:57:47		Database Connection started
+2023-05-14/16:57:47		Table creation started
+2023-05-14/16:57:47		Table created
+2023-05-14/16:57:47		DataBase Connection Closed
+2023-05-14/16:57:47		Getting All records of Employee
+2023-05-14/16:57:47		Successfully fetched all the record
+2023-05-14/16:57:47		Database Connection started
+2023-05-14/16:57:47		DataBase Connection Closed
+2023-05-14/16:57:48		Database Connection started
+2023-05-14/16:57:48		DataBase Connection Closed
+2023-05-14/16:57:48		Getting all details of employee of:1
+2023-05-14/16:57:48		Successfully fetched
+2023-05-14/16:58:08		Resume Converted to text from pdf
+2023-05-14/16:58:08		Getting skills values started
+2023-05-14/16:58:08		Data Cleaning Started
+2023-05-14/16:58:08		Tokenizing completed
+2023-05-14/16:58:08		Filtered Tokens Generated
+2023-05-14/16:58:08		Data Cleaning Started
+2023-05-14/16:58:08		Tokenizing completed
+2023-05-14/16:58:08		Filtered Tokens Generated
+2023-05-14/16:58:08		All skills extracted
+2023-05-14/16:58:08		Creating bag of words with Vectors
+2023-05-14/16:58:08		Started cosine similarity check
+2023-05-14/16:58:08		Similarity Check completed 
+2023-05-14/16:58:08		Updating TaEmployee table started
+2023-05-14/16:58:08		Update table completed successfully
+2023-05-14/16:58:07		Resume parsing started
+2023-05-14/16:58:07		Resume Saving....
+2023-05-14/16:58:07		Resume Saved
+2023-05-14/16:58:08		Resume parsed
+2023-05-14/16:58:08		Skill percentage fetched
+2023-05-14/16:58:08		Employee Saving Started
+2023-05-14/16:58:08		Employee Update Started
+2023-05-14/16:58:08		Employee Updated
+2023-05-14/16:58:06		Image Detection Started
+2023-05-14/16:58:06		Model Haarcascade Initialized
+2023-05-14/16:58:06		Converted to Gray Scale
+2023-05-14/16:58:07		Detection completed
+2023-05-14/16:58:07		Returing the detection
+2023-05-14/16:58:07		Profile Image Save started
+2023-05-14/16:58:07		Image Saved
+2023-05-14/16:58:06		Database Connection started
+2023-05-14/16:58:08		DataBase Connection Closed
+2023-05-14/16:58:08		Getting All records of Employee
+2023-05-14/16:58:08		Successfully fetched all the record
+2023-05-14/16:58:08		Database Connection started
+2023-05-14/16:58:08		DataBase Connection Closed
+2023-05-14/17:03:12		Database Connection started
+2023-05-14/17:03:12		DataBase Connection Closed
+2023-05-14/17:03:12		Getting all details of employee of:0
+2023-05-14/17:03:12		Successfully fetched
+2023-05-14/17:04:43		Checking the Duplicate email values
+2023-05-14/17:04:43		No Duplicate emails found
+2023-05-14/17:04:43		Image Detection Started
+2023-05-14/17:04:43		Model Haarcascade Initialized
+2023-05-14/17:04:43		Converted to Gray Scale
+2023-05-14/17:04:44		Detection completed
+2023-05-14/17:04:44		Returing the detection
+2023-05-14/17:04:43		Database Connection started
+2023-05-14/17:04:44		DataBase Connection Closed
+2023-05-14/17:06:02		Resume Converted to text from pdf
+2023-05-14/17:06:02		Getting skills values started
+2023-05-14/17:06:02		Data Cleaning Started
+2023-05-14/17:06:02		Tokenizing completed
+2023-05-14/17:06:02		Filtered Tokens Generated
+2023-05-14/17:06:02		Data Cleaning Started
+2023-05-14/17:06:02		Tokenizing completed
+2023-05-14/17:06:02		Filtered Tokens Generated
+2023-05-14/17:06:02		All skills extracted
+2023-05-14/17:06:02		Creating bag of words with Vectors
+2023-05-14/17:06:02		Started cosine similarity check
+2023-05-14/17:06:02		Similarity Check completed 
+2023-05-14/17:06:01		Checking the Duplicate email values
+2023-05-14/17:06:01		No Duplicate emails found
+2023-05-14/17:06:02		Inserting to Table TaEmployee started
+2023-05-14/17:06:03		Record Successfully created and Saved in TaEmployee table
+2023-05-14/17:06:03		Saving Address Started
+2023-05-14/17:06:03		Inserting addresses to TaAddress table initiated
+2023-05-14/17:06:03		Data Saved successfully
+2023-05-14/17:06:03		Saving Address Started
+2023-05-14/17:06:03		Inserting addresses to TaAddress table initiated
+2023-05-14/17:06:03		Data Saved successfully
+2023-05-14/17:06:02		Resume parsing started
+2023-05-14/17:06:02		Resume Saving....
+2023-05-14/17:06:02		Resume Saved
+2023-05-14/17:06:02		Resume parsed
+2023-05-14/17:06:02		Skill percentage fetched
+2023-05-14/17:06:02		Employee Saving Started
+2023-05-14/17:06:03		Employee Saved
+2023-05-14/17:06:03		Employee Address Saved
+2023-05-14/17:06:03		Employee Address Saved
+2023-05-14/17:06:01		Image Detection Started
+2023-05-14/17:06:01		Model Haarcascade Initialized
+2023-05-14/17:06:01		Converted to Gray Scale
+2023-05-14/17:06:02		Detection completed
+2023-05-14/17:06:02		Returing the detection
+2023-05-14/17:06:02		Profile Image Save started
+2023-05-14/17:06:02		Image Saved
+2023-05-14/17:06:01		Database Connection started
+2023-05-14/17:06:03		DataBase Connection Closed
+2023-05-14/17:06:03		Getting All records of Employee
+2023-05-14/17:06:03		Successfully fetched all the record
+2023-05-14/17:06:03		Database Connection started
+2023-05-14/17:06:03		DataBase Connection Closed
+2023-05-14/17:06:19		Database Connection started
+2023-05-14/17:06:19		DataBase Connection Closed
+2023-05-14/17:06:19		Getting all details of employee of:2
+2023-05-14/17:06:19		Successfully fetched
+2023-05-14/17:06:23		Getting All records of Employee
+2023-05-14/17:06:23		Successfully fetched all the record
+2023-05-14/17:06:23		Database Connection started
+2023-05-14/17:06:23		DataBase Connection Closed
+2023-05-14/17:06:26		Database Connection started
+2023-05-14/17:06:26		DataBase Connection Closed
+2023-05-14/17:06:26		Getting all details of employee of:0
+2023-05-14/17:06:26		Successfully fetched
+2023-05-14/17:06:48		Resume Converted to text from pdf
+2023-05-14/17:06:48		Getting skills values started
+2023-05-14/17:06:48		Data Cleaning Started
+2023-05-14/17:06:48		Tokenizing completed
+2023-05-14/17:06:48		Filtered Tokens Generated
+2023-05-14/17:06:48		Data Cleaning Started
+2023-05-14/17:06:48		Tokenizing completed
+2023-05-14/17:06:48		Filtered Tokens Generated
+2023-05-14/17:06:48		All skills extracted
+2023-05-14/17:06:48		Creating bag of words with Vectors
+2023-05-14/17:06:48		Started cosine similarity check
+2023-05-14/17:06:48		Similarity Check completed 
+2023-05-14/17:06:47		Checking the Duplicate email values
+2023-05-14/17:06:47		No Duplicate emails found
+2023-05-14/17:06:48		Inserting to Table TaEmployee started
+2023-05-14/17:06:49		Record Successfully created and Saved in TaEmployee table
+2023-05-14/17:06:47		Resume parsing started
+2023-05-14/17:06:47		Resume Saving....
+2023-05-14/17:06:47		Resume Saved
+2023-05-14/17:06:48		Resume parsed
+2023-05-14/17:06:48		Skill percentage fetched
+2023-05-14/17:06:48		Employee Saving Started
+2023-05-14/17:06:49		Employee Saved
+2023-05-14/17:06:47		Image Detection Started
+2023-05-14/17:06:47		Model Haarcascade Initialized
+2023-05-14/17:06:47		Converted to Gray Scale
+2023-05-14/17:06:47		Detection completed
+2023-05-14/17:06:47		Returing the detection
+2023-05-14/17:06:47		Profile Image Save started
+2023-05-14/17:06:47		Image Saved
+2023-05-14/17:06:47		Database Connection started
+2023-05-14/17:06:49		DataBase Connection Closed
+2023-05-14/17:06:49		Getting All records of Employee
+2023-05-14/17:06:49		Successfully fetched all the record
+2023-05-14/17:06:49		Database Connection started
+2023-05-14/17:06:49		DataBase Connection Closed
+2023-05-14/17:06:54		Database Connection started
+2023-05-14/17:06:54		DataBase Connection Closed
+2023-05-14/17:06:54		Deleting employee 3
+2023-05-14/17:06:54		Employee successfully deleted
+2023-05-14/17:06:54		Database Connection started
+2023-05-14/17:06:54		Table creation started
+2023-05-14/17:06:54		Table created
+2023-05-14/17:06:54		DataBase Connection Closed
+2023-05-14/17:06:54		Getting All records of Employee
+2023-05-14/17:06:54		Successfully fetched all the record
+2023-05-14/17:06:54		Database Connection started
+2023-05-14/17:06:54		DataBase Connection Closed
+2023-05-14/17:07:14		Database Connection started
+2023-05-14/17:07:14		Table creation started
+2023-05-14/17:07:14		Table created
+2023-05-14/17:07:14		DataBase Connection Closed
+2023-05-14/17:07:14		User Authentication Started
+2023-05-14/17:07:14		User Fetched
+2023-05-14/17:07:14		Unauthorized User not verified
+2023-05-14/17:07:33		Database Connection started
+2023-05-14/17:07:34		DataBase Connection Closed
+2023-05-14/17:07:40		Database Connection started
+2023-05-14/17:07:40		Table creation started
+2023-05-14/17:07:40		Table created
+2023-05-14/17:07:40		DataBase Connection Closed
+2023-05-14/17:07:40		User Authentication Started
+2023-05-14/17:07:40		User Fetched
+2023-05-14/17:07:40		User Successfully Verified
+2023-05-14/17:07:40		Getting All records of Employee
+2023-05-14/17:07:40		Successfully fetched all the record
+2023-05-14/17:07:40		Database Connection started
+2023-05-14/17:07:40		DataBase Connection Closed

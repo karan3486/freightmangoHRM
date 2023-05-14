@@ -1,0 +1,64 @@
+
+
+{% block content %}
+  <h2>Edit Employee</h2>
+  <form method="post" action="#">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" value="{{ employee[1] }}">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" value="{{ employee[2] }}" readonly>
+    </div>
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <input type="text" class="form-control" id="country" name="country" value="{{ employee[3] }}">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" id="city" name="city" value="{{ employee[4] }}">
+    </div>
+    <div class="form-group">
+      <label for="zip">Zip:</label>
+      <input type="text" class="form-control" id="zip" name="zip" value="{{ employee[5] }}">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea class="form-control" id="address" name="address">{{ employee[6] }}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" class="form-control" id="phone" name="phone" value="{{ employee[7] }}">
+    </div>
+    <!--<div class="form-group">
+      <label for="department">Department:</label>
+      <select class="form-control" id="department" name="department">
+        {% for department in departments %}
+          {% if department.name == employee.department %}
+            <option value="{{ department.name }}" selected>{{ department.name }}</option>
+          {% else %}
+            <option value="{{ department.name }}">{{ department.name }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="profile_photo">Profile Photo:</label>
+      <input type="file" class="form-control-file" id="profile_photo" name="profile_photo">
+    </div>
+    <div class="form-group">
+      <label for="resume">Resume:</label>
+      <input type="file" class="form-control-file" id="resume" name="resume">
+    </div>-->
+    <button type="submit" class="btn btn-primary">Update Employee</button>
+  </form>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function() {
+      $('#editEmployeeModal').modal('show');
+    });
+  </script>
+{% endblock %}

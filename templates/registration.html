@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Registration</title>
+	<link rel="stylesheet" href="static/css/regisform.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+	<form action="/submit" method="POST" id="regisform" enctype="multipart/form-data">
+		<h2>Employee Registration Form</h2>
+		   {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+        <div class="alert alert-danger" style="color: #e91010;">
+            {{ message }}
+       </div>
+            {% endfor %}
+			{% endif %}
+            {% endwith %}
+		<div class="form-group">
+			<strong><label for="name">Name:</label></strong>
+			<input type="text" id="name" value="{{ employee[1] }}" name="name" required>
+		</div>
+		<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" id="email" value="{{ employee[2] }}" name="email" required>
+		</div>
+		<div class="form-group">
+			<label for="country">Country:</label>
+			<input type="text" id="country"  value="{{ employee[3] }}" name="country" required>
+		</div>
+		<div class="form-group">
+		<label for="city">City:</label>
+		<input type="text" id="city" value="{{ employee[4] }}" name="city" required>
+		</div>
+		<div class="form-group">
+		<label for="zip">Zip:</label>
+		<input type="text" id="zip" value="{{ employee[5] }}" name="zip" required>
+		</div>
+		<div class="form-group">
+		<label for="address">Address:</label>
+		<input type="text" id="address" name="address" value="{{ employee[6] }}" rows="4" cols="30" required></input>
+		</div>
+		<div class="form-group">
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" value="{{ employee[7] }}" name="phone" required>
+		</div>
+		<div class="form-group">
+		<label for="department">Department:</label>
+		<select id="department"  name="department" required>
+			<option value="">--Select Department--</option>
+			{% if employee[8]=="IT" %}
+			<option value="IT" selected>IT</option>
+			{%else%}
+			<option value="IT">IT</option>
+			{% endif %}
+
+			{% if employee[8]=="HR" %}
+			<option value="HR" selected>HR</option>
+			{%else%}
+			<option value="HR">HR</option>
+			{% endif %}
+
+			{% if employee[8]=="Finance" %}
+			<option value="Finance" selected>Finance</option>
+			{%else%}
+			<option value="Finance">Finance</option>
+			{% endif %}
+
+			{% if employee[8]=="Sales" %}
+			<option value="Sales" selected>Sales</option>
+			{%else%}
+			<option value="Sales">Sales</option>
+			{% endif %}
+		</select>
+		</div>
+		<div class="form-group">
+			<label for="skill">Enter Job Description's skill sets:</label>
+			<input type="text" id="skill" name="skill" required>
+		</div>
+		<div class="form-group">
+		<label for="photo">Profile Photo:</label>
+			<input type="file" id="photo" accept="image/png,image/jpg,image/jpeg" name="photo">
+		</div>
+		<div class="form-group">
+		<label for="resume">Resume:</label>
+			<input type="file" id="resume" accept=".docx,.pdf" name="resume">
+		</div>
+		<div class="form-group">
+			{% for i,address in addresses%}
+			<fieldset class="address-fieldset">
+		<div class="address-field">
+			<label for="address1">Address {{i+1}}:</label>
+			<input type="text" id="address1" value="{{address[1]}}" name="address"><br>
+			<button type="button" onclick="removeAddressField(this)" class="remove-address-btn">X</button>
+		</div>
+			</fieldset>
+			{%endfor%}
+		</div>
+		<div class="form-group">
+			<div id="addresses" class="address-field">
+		</div>
+		</div>
+		<div class="form-group">
+		<button type="button" onclick="addAddress()">Add Address</button>
+			{%if isEdit == True %}
+			<input type="submit"  value="Update">
+			<input type="hidden" name="update" value=True>
+			{%else%}
+		    <input type="submit" value="Submit">
+			<input type="hidden" name="update" value=False>
+			{%endif%}
+		</div>
+	</form>
+
+	<script>
+function removeAddressField(btn) {
+  const fieldset = btn.closest('.address-fieldset');
+  fieldset.remove();
+}
+
+		function InitUpdateAction(){
+		var form_data = new FormData(document.getElementById('regisform'));
+		$.ajax({
+            url: '/updateregistration',
+            type: 'POST',
+            data: JSON.stringify(form_data),
+            contentType: 'application/json',
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+         }
+
+		function addAddress() {
+		var addressCount = document.querySelectorAll('fieldset').length + 1;
+		var fieldset = document.createElement('fieldset');
+		fieldset.classList.add("address-fieldset");
+		fieldset.innerHTML= `
+				<label for="address${addressCount}">Address ${addressCount}:</label>
+				<input type="text" id="address${addressCount}" name="address">
+				<br>
+				<button type="button" onclick="removeAddressField(this)" class="remove-address-btn">X</button>
+			`;
+			var addressesDiv = document.getElementById('addresses');
+			addressesDiv.appendChild(fieldset);
+
+
+		}
+	</script>
+</body>
+</html>

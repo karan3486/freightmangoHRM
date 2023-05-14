@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login</title>
+    <link rel="stylesheet" href="static/css/main.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	<script type="text/javascript" src ="script/datagrid.js"></script>
+</head>
+<body>
+	<form action="/saveuser" method="POST">
+		<div class="container">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+        <div class="alert alert-danger" style="color: #e91010;">
+            {{ message }}
+       </div>
+            {% endfor %}
+			{% endif %}
+            {% endwith %}
+            <label for="name"><b>First Name</b></label>
+				<input type="text" placeholder="Enter First Name" name="name" required>
+            <label for="lastname"><b>Last Name</b></label>
+				<input type="text" placeholder="Enter Last Name" name="lastname" required>
+			<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" required>
+			<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required>
+            <label for="confirmpassword"><b>Confirm Password</b></label>
+				<input type="password" placeholder="Confirm Password" name="confirmpassword" required>
+			<button type="submit"><b>Create</b></button>
+		</div>
+	</form>
+</body>
+</html>
+
+
