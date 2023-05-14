@@ -30,17 +30,22 @@ def HomePage():
     try:
         db = DB()
         db.InitTables()
-        if('user_id' in session):
-            return render_template('home.html')
-        username = request.form['username']
-        password = request.form['password']
-        user=User()
-        if (user.AuthenticateUser(db.instance, username, password)):
-            session['user_id'] = username
-            return render_template('home.html')
+        if(request.method=='POST'):
+            username = request.form['username']
+            password = request.form['password']
+            user = User()
+            if (user.AuthenticateUser(db.instance, username, password)):
+                session['user_id'] = username
+                return render_template('home.html')
+            else:
+                flash("User Does Not Exists")
+                return render_template('login.html')
         else:
-            flash("User Does Not Exists")
-            return render_template('login.html')
+            if ('user_id' in session):
+                return render_template('home.html')
+            else:
+                flash("User Does Not Exists")
+                return render_template('login.html')
     except Exception as e:
         return render_template('login.html')
     finally:
