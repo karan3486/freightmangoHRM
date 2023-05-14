@@ -10,7 +10,7 @@ Jinja2==3.1.2
 joblib==1.2.0
 MarkupSafe==2.1.2
 nltk==3.8.1
-numpy==1.24.3
+numpy
 opencv-python==4.7.0.72
 PyPDF2==3.0.1
 regex==2023.5.5
