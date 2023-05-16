@@ -6,17 +6,18 @@ from werkzeug.utils import secure_filename, send_file
 from utilities.Submit import FormSubmit
 from Model.Employee import Employee
 from MLRepository.ImageDetection import HumanFaceDetection
-import nltk
 
 app = Flask(__name__)
 app.secret_key = 'my_secret_key'
 
-
+@app.before_request
+def check_login_status():
+    login_required_routes = ['/registration','/submit','/get_all_employees','/delete-employee']
+    if request.path in login_required_routes and not session.get('user_logged_in'):
+        return redirect('/')
 @app.route('/', methods=['GET'])
 @cross_origin()
 def LoginPage():
-    nltk.download('punkt')
-    nltk.download('stopwords')
     return render_template("login.html")
 
 @app.route('/logout', methods=['GET'])
@@ -35,13 +36,13 @@ def HomePage():
             password = request.form['password']
             user = User()
             if (user.AuthenticateUser(db.instance, username, password)):
-                session['user_id'] = username
+                session['user_logged_in'] = True
                 return render_template('home.html')
             else:
                 flash("User Does Not Exists")
                 return render_template('login.html')
         else:
-            if ('user_id' in session):
+            if (session['user_logged_in']):
                 return render_template('home.html')
             else:
                 flash("User Does Not Exists")
@@ -169,6 +170,7 @@ def Submit():
             imagefile = request.files['photo']
             resumefile = request.files['resume']
             jobDescription = request.form['skill']
+            oldemail=request.form['oldemail']
             formSubmit=FormSubmit()
             if (not isUpdate and employee.IsDuplicateEmail(db.instance)):
                 flash("Email ID Provided is Already Exists!")
@@ -184,7 +186,7 @@ def Submit():
                 flash("Please Upload Picture with Valid format")
                 return render_template('registration.html', employee=emp, isEdit=isUpdate)
             if resumefile and formSubmit.Allowed_file_resume(resumefile.filename):
-                formSubmit.SaveForm(resumefile, email, jobDescription, employee, isUpdate, addressList, db.instance)
+                formSubmit.SaveForm(resumefile, email, jobDescription, employee, isUpdate, addressList, db.instance,oldemail)
             else:
                 flash("Please Upload Resume with Valid format")
                 return render_template('registration.html', employee=emp, isEdit=isUpdate)
