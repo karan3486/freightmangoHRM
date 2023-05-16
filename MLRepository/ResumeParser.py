@@ -29,6 +29,8 @@ class ResumeParser:
                 self.log_writer.log(self.file_object, 'Resume Converted to text from pdf')
     def DataCleaning(self,dataset):
         try:
+             nltk.download('punkt')
+            nltk.download('stopwords')
             self.log_writer.log(self.file_object, 'Data Cleaning Started')
             tokens = word_tokenize(dataset)
             self.log_writer.log(self.file_object, 'Tokenizing completed')
