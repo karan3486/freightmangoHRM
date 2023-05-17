@@ -10,11 +10,7 @@ from MLRepository.ImageDetection import HumanFaceDetection
 app = Flask(__name__)
 app.secret_key = 'my_secret_key'
 
-@app.before_request
-def check_login_status():
-    login_required_routes = ['/registration','/submit','/get_all_employees','/delete-employee']
-    if request.path in login_required_routes and not session.get('user_logged_in'):
-        return redirect('/')
+
 @app.route('/', methods=['GET'])
 @cross_origin()
 def LoginPage():
